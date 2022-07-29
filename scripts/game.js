@@ -60,6 +60,9 @@ function playerTurn() {
         game.score++;
         showScore();
         addTurn();
+    } else {
+        alert('Wrong move!');
+        newGame();
     }
 }
 
