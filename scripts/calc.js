@@ -1,5 +1,5 @@
-function addition() {
+const addition = () => {
     return 42;
 };
 
-module.exports = addition; 
+module.exports = addition;

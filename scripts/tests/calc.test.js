@@ -1,22 +1,18 @@
-const { test } = require('picomatch');
-const { describe } = require('yargs');
-const addition = require('../calc');
+const addition = require("../calc");
 
-describe('Calculator', () => {
-
-    describe('Addition function', () => {
-        test('should return 42 for 20 + 22', () => {
+describe("Calculator", () => {
+    describe("Addition function", () => {
+        test("should return 42 for 20 + 22", () => {
             expect(addition(20, 22)).toBe(42);
-        })
+        });
     });
-    describe('Subtraction function', () => {
-        
-    });
-    describe('Multiply function', () => {
-        
-    });
-    describe('Division function', () => {
-        
-    });
+    describe("Subtract function", () => {
 
+    });
+    describe("Multiply function", () => {
+
+    });
+    describe("Divide function", () => {
+
+    });
 });
