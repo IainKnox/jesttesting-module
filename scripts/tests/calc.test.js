@@ -1,8 +1,7 @@
- /**
+/**
  * @jest-environment jsdom
  */
- 
- const { string } = require("yargs");
+
 const addition = require("../calc");
 
 describe("Calculator", () => {
