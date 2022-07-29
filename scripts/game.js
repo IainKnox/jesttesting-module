@@ -9,7 +9,22 @@ function newGame() {
     game.score = 0;
     game.playerMoves = [];
     game.currentGame = [];
+    showScore();
+    addTurn();
+
+};
+
+function addTurn() {
+    game.playersMoves = [];
+    game.currentGame.push(game.choices[Math.floor(Math.random() * 4)]);
+    // showTurns();
+};
+
+function showScore() {
+    document.getElementById('score').innerText = game.score;
 };
 
 
-module.exports = { game, newGame };
+
+
+module.exports = { game, newGame, showScore, addTurn };
