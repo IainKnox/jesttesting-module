@@ -1,7 +1,6 @@
 /**
  * @jest-environment jsdom
  */
-
 const { game, newGame, showScore, addTurn, lightsOn, showTurns } = require('../game');
 
 beforeAll(() => {
@@ -27,6 +26,9 @@ describe("game object contains correct keys", () => {
     });
     test('choices contains the correct ids', () => {
         expect(game.choices).toEqual(['button1', 'button2', 'button3', 'button4']);
+    });
+    test('turnNumber key exists', () => {
+        expect('turnNumber' in game).toBe(true);
     });
 })
 
